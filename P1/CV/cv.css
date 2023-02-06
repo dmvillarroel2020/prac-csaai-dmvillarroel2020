@@ -13,13 +13,31 @@ min-height: 500px;
 }
 
 .izquierda {
-width: 50%;
+width: 30%;
 }
 
 .derecha {
-width: 50%;
+width: 70%;
 }
 
+.col {
+float: left;
+position: relative;
+padding: 5px;
+padding-bottom: 3px;
+}
+
+.iizz{
+width: 33%;
+}
+
+.ccnn{
+width: 33%;
+}
+
+.ddrr{
+  width: 33%;
+  }
 /* Clear floats despues de las columnas para eliminar la superposición */
 .filla:after {
 content: "";
@@ -28,15 +46,14 @@ clear: both;
 }
 
 #c1 {
-    background-color:rgb(7, 143, 86);
+    background-color:rgb(219, 203, 129);
 }
 
 #c2 {
-    background-color:rgb(0, 175, 206);
+    background-color:rgb(219, 203, 129);
 }
-#c3 {
-  background-color:rgb(0, 175, 206);
-}
+
+
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
@@ -63,5 +80,7 @@ img {
         width: 100%;
     }
 }
-
+.background-image background-image {
+  opacity: 0.5;
+}
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
