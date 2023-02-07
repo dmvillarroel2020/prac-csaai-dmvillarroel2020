@@ -83,6 +83,9 @@ img {
     }
 }
 .background-image background-image {
-  opacity: 0.5;
+  opacity: 0.5; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
