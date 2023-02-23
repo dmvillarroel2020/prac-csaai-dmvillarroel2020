@@ -19,8 +19,15 @@ width: 30%;
 .derecha {
 width: 70%;
 }
-
-
+body{
+  background-color: rgb(75, 156, 75);
+}
+div{
+  border-bottom: 2px; 
+  border-style:solid;
+  border-radius: 5px;
+  border-color: rgb(181, 214, 182);
+}
 /*columnas dentro de referencias*/
 .col {
 float: left;
@@ -70,6 +77,22 @@ img {
     width: 50%;
   }
 
+h2 {
+    color:rgb(26, 77, 20);
+}
+
+h3 {
+    color:rgb(26, 77, 20);
+}
+
+video{
+  height: auto;
+  width: 100%;
+}
+
+#tam_p{
+  font-size: 80%;
+}
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
@@ -83,9 +106,6 @@ img {
     }
 }
 .background-image background-image {
-  opacity: 0.5; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
