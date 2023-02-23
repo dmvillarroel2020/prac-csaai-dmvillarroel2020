@@ -40,6 +40,9 @@
     background-size: cover;
   }
 
+  a{
+    color:rgb(26, 77, 20);
+  }
   div{
     border: 5px; 
     border-style:solid;
