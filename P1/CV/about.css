@@ -1,3 +1,47 @@
 * {
     box-sizing: border-box;
   }
+
+  body{
+    background-color: rgb(75, 156, 75);
+  }
+  img{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+  
+  .columna {
+    float: left;
+    padding: 10px;
+    min-height: 500px;
+  }
+
+  #c1 {
+    background-color:rgb(219, 203, 129);
+  }
+
+  #perfil{
+    clip-path: circle();
+    }
+  
+
+  h2{
+    color:rgb(26, 77, 20);
+  }
+
+  p{
+    float:calc();
+    position: relative;
+  }
+
+  .background-image background-image {
+    background-size: cover;
+  }
+
+  div{
+    border: 5px; 
+    border-style:solid;
+    border-color: rgb(232, 233, 232);
+  }
