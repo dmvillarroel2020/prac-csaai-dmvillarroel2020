@@ -42,6 +42,7 @@
 
   a{
     color:rgb(26, 77, 20);
+    float: left;
   }
   div{
     border: 5px; 
