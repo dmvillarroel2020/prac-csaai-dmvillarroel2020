@@ -5,3 +5,4 @@
 console.log("Estoy fuera del HTML");
 console.log("Se recomienda hacerlo así");
 console.log("------");
+console.log('dato1dato2dato3');
