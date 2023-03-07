@@ -1,6 +1,6 @@
 console.log("Ejecutando JS...");
 
-const ctx = document.getElementById("canvas");
+const ctx = document.getElementById("canva");
 
 //-- Definir el tamaño del canvas
 canvas.width = 300;
