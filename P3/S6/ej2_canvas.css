@@ -4,9 +4,9 @@
 */
 
 canvas {
-    background-color: lightblue;
+    background-color: rgb(18, 155, 201);
     border-style: solid;
-    border-width: 1px;
+    border-width: 5px;
     border-color: black;
     border-radius: 5px;
   }
