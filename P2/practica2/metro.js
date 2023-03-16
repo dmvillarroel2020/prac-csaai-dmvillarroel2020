@@ -41,7 +41,7 @@ function getRandomInt(max) {
 }
 
 //-- Generamos números secretos y los almacenamos en un array
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 4; i++) {
     let rnum = getRandomInt(9);
     secretkey.push(rnum.toString());
 }
