@@ -30,26 +30,35 @@ const gui = {
 
 }
 
-//-- Definir un array con el codigo aleatorio para decodificar
+//-- 
 
-var cantidadNumeros = 4;
-var myArray = []
-while(myArray.length < cantidadNumeros ) 
-{
-  var numeroAleatorio = Math.ceil(Math.random()*cantidadNumeros);
-  var existe = false;
-  for(var i=0;i<myArray.length;i++){
-	if(myArray [i] == numeroAleatorio){
-        existe = true;
-        break;
-    }
-  }
-  if(!existe){
-    myArray[myArray.length] = numeroAleatorio;
-  }
-
+//-- Generar números aleatorios con un valor máximo
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
-console.log(myArray);
+
+
+//-- Array que almacena números secretos
+const secretkey = [];
+
+//-- Generar números aleatorios con un valor máximo
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+//-- Generamos números secretos y los almacenamos en un array
+for (let i = 0; i < 10; i++) {
+    let rnum = getRandomInt(9);
+    secretkey.push(rnum.toString());
+}
+
+//-- Mostramos el contenido del array de números secretos en la consola
+for (let j = 0; j < secretkey.length; j++) {
+    console.log( j + ' Secret Key ' + secretkey[j]);
+}
+
+//-- 
+//-- 
 
 console.log("Ejecutando JS...");
 
