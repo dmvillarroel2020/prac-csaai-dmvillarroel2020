@@ -49,7 +49,7 @@ while(myArray.length < cantidadNumeros )
   }
 
 }
-
+console.log(myArray);
 
 console.log("Ejecutando JS...");
 
