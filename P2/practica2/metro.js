@@ -32,22 +32,27 @@ const gui = {
 
 //-- Definir un array con el codigo aleatorio para decodificar
 
-var myArray = [0,1,2,3,4,5,6,7,8,9];
-
-    var i,j,k;
-    for (i = myArray.length; i; i--) {
-        j = Math.floor(Math.random() * i);
-        k = myArray[i - 1];
-        myArray[i - 1] = myArray[j];
-        myArray[j] = k;
+var cantidadNumeros = 10;
+var myArray = []
+while(myArray.length < cantidadNumeros ){
+  var numeroAleatorio = Math.ceil(Math.random()*cantidadNumeros);
+  var existe = false;
+  for(var i=0;i<myArray.length;i++){
+	if(myArray [i] == numeroAleatorio){
+        existe = true;
+        break;
     }
+  }
+  if(!existe){
+    myArray[myArray.length] = numeroAleatorio;
+  }
+
+}
+
+document.write("números aleatorios : " + myArray);
 
 
-const password = document.console.log(myArray);
-console.log(password);
-
-
-console.log("Ejecuitando JS...");
+console.log("Ejecutando JS...");
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
