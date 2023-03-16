@@ -32,15 +32,16 @@ const gui = {
 
 //-- 
 
-//-- Generar números aleatorios con un valor máximo
+//-- Array que almacena números secretos
 const secretkey = [];
 
-function getRandomInt(...args: [max: any]) {
+//-- Generar números aleatorios con un valor máximo
+function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
 //-- Generamos números secretos y los almacenamos en un array
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 10; i++) {
     let rnum = getRandomInt(9);
     secretkey.push(rnum.toString());
 }
