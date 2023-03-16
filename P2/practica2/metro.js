@@ -32,7 +32,7 @@ const gui = {
 
 //-- Definir un array con el codigo aleatorio para decodificar
 
-var cantidadNumeros = 10;
+var cantidadNumeros = 4;
 var myArray = []
 while(myArray.length < cantidadNumeros ) 
 {
