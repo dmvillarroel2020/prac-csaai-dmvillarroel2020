@@ -1,0 +1,95 @@
+/* Estilo del index.html
+*/
+
+*{
+    font-family: fantasy;
+    font-size:x-large;
+}
+body{
+    background-color: black;
+    margin: 20px;
+}
+
+h1{
+    color: red;
+    font-family: 25px ;
+}
+
+
+div {
+    background-color: rgb(47, 177, 58);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 2px;
+  }
+
+button{
+    transition-duration: 1s;
+    border-color: transparent;
+
+}
+#cero{
+    font-size: 10px;
+}
+
+
+table{
+    
+    margin: 20px auto;
+    background-color: white;
+    border: 5px;
+    border-color: rgb(72, 182, 72);
+
+}
+
+table, th, td{
+    border: 5px solid white;
+    
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.num{
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+#display {
+    text-align: center;
+    font-size: 80px;
+    border-color: green;
+    margin: 5px;
+}
+
+#displaycod {
+    text-align: center;
+    border-color: green;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 10px;
+
+}
+
+#tablacod {
+    background-color: red;
+}
+
+.cod {
+    background-color: red;
+    color: white;
+
+}
+
+.dispcrono {
+    font-size: 80px;
+}
+
+.thcod {
+    background-color: red;
+}
