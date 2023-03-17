@@ -48,7 +48,7 @@ for (let i = 0; i < 4; i++) {
 
 //-- Mostramos el contenido del array de números secretos en la consola
 for (let j = 0; j < secretkey.length; j++) {
-    console.log( j + ' Dígito Codificado ' + secretkey[j]);
+    console.log( 'Posición nº' + j + ' Dígito Codificado ' + secretkey[j]);
 }
 
 
