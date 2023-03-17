@@ -66,9 +66,9 @@ for (let j = 0; j < secretkey.length; j++) {
     }  
     
     if(secretkey[j] == 2) {      
-        cod3.innerHTML = ('pass 3' + j);
-    }
-    
+        cod3.innerHTML = ('pass 2' + j);
+    }  
+
     if(secretkey[j] == 3) {      
         cod4.innerHTML = ('pass 4' + j);
     }
