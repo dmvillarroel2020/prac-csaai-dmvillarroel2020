@@ -48,12 +48,9 @@ for (let i = 0; i < 4; i++) {
 
 //-- Mostramos el contenido del array de números secretos en la consola
 for (let j = 0; j < secretkey.length; j++) {
+    console.log( j + ' Dígito Codificado ' + secretkey[j]);
 }
 
-console.log('el primer digito  es ' + secretkey[0]);
-console.log('el segundo digito  es ' + secretkey[1]);
-console.log('el tercer digito  es ' + secretkey[2]);
-console.log('el cuarto digito  es ' + secretkey[3]);
 
 
 //-- Ponemos en console.log el valor de j en la password
@@ -68,11 +65,11 @@ for (let j = 0; j < secretkey.length; j++) {
         console.log.cod2.innerHTML = ('pass 2' + secretkey[j]);
     }  
     
-    if(secretkey[j] == 1) {      
+    if(secretkey[j] == 3) {      
         console.log.cod3.innerHTML = ('pass 3' + secretkey[j]);
     }
     
-    if(secretkey[j] == 1) {      
+    if(secretkey[j] == 4) {      
         console.log.cod4.innerHTML = ('pass 4' + secretkey[j]);
     }
 }
