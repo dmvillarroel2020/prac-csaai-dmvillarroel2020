@@ -51,11 +51,29 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( j + ' Secret Key ' + secretkey[j]);
 }
 
-console.log('el primer digito  es' + secretkey[0]);
-console.log('el primer digito  es' + secretkey[1]);
-console.log('el primer digito  es' + secretkey[2]);
-console.log('el primer digito  es' + secretkey[3]);
+console.log('el primer digito  es ' + secretkey[0]);
+console.log('el primer digito  es ' + secretkey[1]);
+console.log('el primer digito  es ' + secretkey[2]);
+console.log('el primer digito  es ' + secretkey[3]);
 
+for (let j = 0; j < secretkey.length; j++) {
+
+    if(secretkey[j] == 1) {      
+        console.log.cod1.innerHTML = ('pass 1' + secretkey[j]);
+    }
+  
+    if(secretkey[j] == 2) {      
+        console.log.cod2.innerHTML = ('pass 2' + secretkey[j]);
+    }  
+    
+    if(secretkey[j] == 1) {      
+        console.log.cod3.innerHTML = ('pass 3' + secretkey[j]);
+    }
+    
+    if(secretkey[j] == 1) {      
+        console.log.cod4.innerHTML = ('pass 4' + secretkey[j]);
+    }
+}
 //-- 
 
 console.log("Ejecutando JS...");
