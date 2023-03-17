@@ -68,6 +68,7 @@ cod4 = digito4
 //-- Creo un array con los digitos de la key 
 var digitos = [digito1, digito2, digito3, digito4];
 
+
 var botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
 
 
