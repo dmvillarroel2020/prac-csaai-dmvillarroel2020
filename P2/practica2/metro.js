@@ -51,7 +51,8 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( j + ' Secret Key ' + secretkey[j]);
 }
 
-//-- 
+console.log('el digito 1 es' + secretkey[1]);
+
 //-- 
 
 console.log("Ejecutando JS...");
