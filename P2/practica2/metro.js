@@ -55,26 +55,26 @@ for (let j = 0; j < secretkey.length; j++) {
 
 //-- Ponemos en console.log el valor de j en la password
 
-const c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
+//--fconst c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
 
-for (let j = 0; j < secretkey.length; j++) {
+//--for (let j = 0; j < secretkey.length; j++) {
 
-    if(secretkey[j] == 0) {      
-        c1.innerHTML = ('pass 1' + secretkey[0]);
-    }
+    //--fif(secretkey[j] == 0) {      
+        //--fc1.innerHTML = ('pass 1' + secretkey[0]);
+    //--f}
   
-    if(secretkey[j] == 1) {      
-        c2.innerHTML = ('pass 2' + secretkey[1]);
-    }  
+//--f    if(secretkey[j] == 1) {      
+    //--f    c2.innerHTML = ('pass 2' + secretkey[1]);
+    //--f}  
     
-    if(secretkey[j] == 2) {      
-        c3.innerHTML = ('pass 3' + secretkey[2]);
-    }  
+    //--fif(secretkey[j] == 2) {      
+    //--f    c3.innerHTML = ('pass 3' + secretkey[2]);
+    //--f}  
 
-    if(secretkey[j] == 1) {      
-        c4.innerHTML = ('pass 4' + secretkey[3]);
-    }  
-}
+    //--fif(secretkey[j] == 1) {      
+    //--f    c4.innerHTML = ('pass 4' + secretkey[3]);
+    //--f}  
+//--f}
 //-- 
 
 console.log("Ejecutando JS...");
