@@ -29,6 +29,7 @@ const gui = {
 
 
 }
+var botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
 
 console.log("Ejecutando JS...");
 
@@ -63,6 +64,14 @@ gui.cod1 = digito1;
 gui.cod2 = digito2;
 gui.cod3 = digito3;
 gui.cod4 = digito4
+
+//-- Creo un array con los digitos de la key 
+var digitos = [digito1, digito2, digito3, digito4];
+
+var botones = [gui.n0, gui.n1, gui.n2, gui.n3,
+               gui.n4, gui.n5, gui.n6, gui.n7,
+               gui.n8, gui.n9];
+
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
@@ -138,12 +147,12 @@ gui.reset.onclick = () => {
 
 
 //-- Funcion que compara el valor del onclick con el array de digitos
-function cambiarKey() {
-    for (let i=0; i < secretkey[i]; i++) {
-        if (secretkey[i] === gui.n0.onclick) {
-            secretkey[i] = digito1;
-            gui.cod1.innerHTML = (digito1);
-
-        };
-    }
-}
+for (var i = 0; i < botones.length; i++) {
+    var boton = botones[i]; // Obtén el botón 
+    boton.onclick = function() {
+      if (digitos.includes(this.digito)) { // Si el número del botón está en el array
+        this.innerHTML = 'hola'; // Cambia el texto del botón
+      }
+    };
+  }
+  
