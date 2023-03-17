@@ -77,20 +77,23 @@ function cambiarKeyy() {
             secretkey[i] = parseInt[n4];
         }
         if (secretkey(i) === parseInt[n5]) {
-            secretkey[i] = parseInt[n6];
+            secretkey[i] = parseInt[n5];
         }
 
         if (secretkey(i) === parseInt[n6]) {
-            secretkey[i] = parseInt[n0];
+            secretkey[i] = parseInt[n6];
         }
         if (secretkey(i) === parseInt[n7]) {
-            secretkey[i] = parseInt[n0];
+            secretkey[i] = parseInt[n7];
         }
         if (secretkey(i) === parseInt[n8]) {
-            secretkey[i] = parseInt[n9];
+            secretkey[i] = parseInt[n8];
         }
 
-    }
+        if (secretkey(i) === parseInt[n9]) {
+            secretkey[i] = parseInt[n9];
+        }
+    };
 }
 //-- Ponemos en console.log el valor de j en la password
 
