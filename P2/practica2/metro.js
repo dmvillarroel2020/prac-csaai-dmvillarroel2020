@@ -53,11 +53,21 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( 'Posición nº' + j + ' Dígito Codificado ' + secretkey[j]);
 }
 
-
+//-- Guardo el array por separado en variables
 let digito1 = secretkey[0];
 let digito2 = secretkey[1];
 let digito3 = secretkey[2];
 let digito4 = secretkey[3];
+//-- Asigno esas variables a los asteriscos
+gui.cod1 = digito1;
+gui.cod2 = digito2;
+gui.cod3 = digito3;
+gui.cod4 = digito4;
+
+//-- Escribo en console los digitos para asegurarme que se guardan bien
+
+console.log('LA CLAVE SECRETA ES: ' + cod1 + cod2 + cod3 + cod4);
+
 
 
 function cambiarKeyy() {
