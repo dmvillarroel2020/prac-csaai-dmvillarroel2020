@@ -51,7 +51,10 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( j + ' Secret Key ' + secretkey[j]);
 }
 
-console.log('el digito 1 es' + secretkey[1]);
+console.log('el primer digito  es' + secretkey[0]);
+console.log('el primer digito  es' + secretkey[1]);
+console.log('el primer digito  es' + secretkey[2]);
+console.log('el primer digito  es' + secretkey[3]);
 
 //-- 
 
