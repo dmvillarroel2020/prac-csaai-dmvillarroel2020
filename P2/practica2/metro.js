@@ -48,13 +48,12 @@ for (let i = 0; i < 4; i++) {
 
 //-- Mostramos el contenido del array de números secretos en la consola
 for (let j = 0; j < secretkey.length; j++) {
-    console.log( j + ' Secret Key ' + secretkey[j]);
 }
 
 console.log('el primer digito  es ' + secretkey[0]);
-console.log('el primer digito  es ' + secretkey[1]);
-console.log('el primer digito  es ' + secretkey[2]);
-console.log('el primer digito  es ' + secretkey[3]);
+console.log('el segundo digito  es ' + secretkey[1]);
+console.log('el tercer digito  es ' + secretkey[2]);
+console.log('el cuarto digito  es ' + secretkey[3]);
 
 for (let j = 0; j < secretkey.length; j++) {
 
