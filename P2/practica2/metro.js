@@ -52,7 +52,46 @@ for (let j = 0; j < secretkey.length; j++) {
 }
 
 
+let digito1 = secretkey[0];
+let digito2 = secretkey[1];
+let digito3 = secretkey[2];
+let digito4 = secretkey[3];
 
+
+function cambiarKeyy() {
+    for (let i=0; i < secretkey[i]; i++) {
+        if (secretkey(i) === parseInt[n0]) {
+            secretkey[i] = parseInt[n0];
+        }
+        if (secretkey(i) === parseInt[n1]) {
+            secretkey[i] = parseInt[n1];
+        }
+        if (secretkey(i) === parseInt[n2]) {
+            secretkey[i] = parseInt[n2];
+        }
+
+        if (secretkey(i) === parseInt[n3]) {
+            secretkey[i] = parseInt[n3];
+        }
+        if (secretkey(i) === parseInt[n4]) {
+            secretkey[i] = parseInt[n4];
+        }
+        if (secretkey(i) === parseInt[n5]) {
+            secretkey[i] = parseInt[n6];
+        }
+
+        if (secretkey(i) === parseInt[n6]) {
+            secretkey[i] = parseInt[n0];
+        }
+        if (secretkey(i) === parseInt[n7]) {
+            secretkey[i] = parseInt[n0];
+        }
+        if (secretkey(i) === parseInt[n8]) {
+            secretkey[i] = parseInt[n9];
+        }
+
+    }
+}
 //-- Ponemos en console.log el valor de j en la password
 
 //--fconst c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
