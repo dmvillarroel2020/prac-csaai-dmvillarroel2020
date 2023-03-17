@@ -55,6 +55,9 @@ console.log('el segundo digito  es ' + secretkey[1]);
 console.log('el tercer digito  es ' + secretkey[2]);
 console.log('el cuarto digito  es ' + secretkey[3]);
 
+
+//-- Ponemos en console.log el valor de j en la password
+
 for (let j = 0; j < secretkey.length; j++) {
 
     if(secretkey[j] == 1) {      
