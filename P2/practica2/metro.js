@@ -54,6 +54,7 @@ for (let j = 0; j < secretkey.length; j++) {
 
 
 //-- Ponemos en console.log el valor de j en la password
+//-- 
 
 for (let j = 0; j < secretkey.length; j++) {
 
