@@ -150,7 +150,7 @@ gui.reset.onclick = () => {
 for (var i = 0; i < botones.length; i++) {
     var boton = botones[i]; // Obtén el botón 
     boton.onclick = function() {
-      if (digitos.includes(this.digito)) { // Si el número del botón está en el array
+      if (digitos.includes(this.boton)) { // Si el número del botón está en el array
         this.innerHTML = 'hola'; // Cambia el texto del botón
       }
     };
