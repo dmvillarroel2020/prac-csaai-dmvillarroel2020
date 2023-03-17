@@ -60,19 +60,19 @@ const c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
 for (let j = 0; j < secretkey.length; j++) {
 
     if(secretkey[j] == 0) {      
-        c1.innerHTML = ('pass 1' + j);
+        c1.innerHTML = ('pass 1' + secretkey[0]);
     }
   
     if(secretkey[j] == 1) {      
-        c2.innerHTML = ('pass 2' + j);
+        c2.innerHTML = ('pass 2' + secretkey[1]);
     }  
     
     if(secretkey[j] == 2) {      
-        c3.innerHTML = ('pass 3' + j);
+        c3.innerHTML = ('pass 3' + secretkey[2]);
     }  
 
     if(secretkey[j] == 1) {      
-        c4.innerHTML = ('pass 4' + j);
+        c4.innerHTML = ('pass 4' + secretkey[3]);
     }  
 }
 //-- 
