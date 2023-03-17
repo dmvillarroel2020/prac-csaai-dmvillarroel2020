@@ -60,15 +60,15 @@ let digito2 = secretkey[1];
 let digito3 = secretkey[2];
 let digito4 = secretkey[3];
 //-- Asigno esas variables a los asteriscos
-gui.cod1 = digito1;
-gui.cod2 = digito2;
-gui.cod3 = digito3;
-gui.cod4 = digito4
+cod1 = digito1;
+cod2 = digito2;
+cod3 = digito3;
+cod4 = digito4
 
 //-- Creo un array con los digitos de la key 
 var digitos = [digito1, digito2, digito3, digito4];
 
-var botones = [gui.n0, gui.n1, gui.n2, gui.n3, gui.n4, gui.n5, gui.n6, gui.n7, gui.n8, gui.n9];
+var botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
 
 
 //-- Definir un objeto cronómetro
