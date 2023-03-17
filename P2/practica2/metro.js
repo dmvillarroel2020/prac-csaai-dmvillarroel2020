@@ -30,6 +30,8 @@ const gui = {
 
 }
 
+console.log("Ejecutando JS...");
+
 //-- 
 
 //-- Array que almacena números secretos
@@ -118,8 +120,6 @@ function cambiarKeyy() {
     //--f}  
 //--f}
 //-- 
-
-console.log("Ejecutando JS...");
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
