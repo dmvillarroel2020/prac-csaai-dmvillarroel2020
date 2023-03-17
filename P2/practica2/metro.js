@@ -67,52 +67,52 @@ gui.start.onclick = () => {
     crono.start();
 }
 gui.n0.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 0!!");
     crono.start();
 }  
 
 gui.n1.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 1!!");
     crono.start();
 }  
 
 gui.n2.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 2!!");
     crono.start();
 }  
 
 gui.n3.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 3!!");
     crono.start();
 }  
 
 gui.n4.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 4!!");
     crono.start();
 }  
 
 gui.n5.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 5!!");
     crono.start();
 }  
 
 gui.n6.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 6!!");
     crono.start();
 }  
 
 gui.n7.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 7!!");
     crono.start();
 }  
 
 gui.n8.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 8!!");
     crono.start();
 }  
 
 gui.n9.onclick = () => {
-    console.log("Start!!");
+    console.log("Nº 9!!");
     crono.start();
 }  
 
