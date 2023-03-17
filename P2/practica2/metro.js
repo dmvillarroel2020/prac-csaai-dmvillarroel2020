@@ -62,74 +62,7 @@ let digito4 = secretkey[3];
 gui.cod1 = digito1;
 gui.cod2 = digito2;
 gui.cod3 = digito3;
-gui.cod4 = digito4;
-
-//-- Escribo en console los digitos para asegurarme que se guardan bien
-
-console.log('LA CLAVE SECRETA ES: ' + cod1 + cod2 + cod3 + cod4);
-
-
-
-function cambiarKeyy() {
-    for (let i=0; i < secretkey[i]; i++) {
-        if (secretkey(i) === parseInt[n0]) {
-            secretkey[i] = parseInt[n0];
-        }
-        if (secretkey(i) === parseInt[n1]) {
-            secretkey[i] = parseInt[n1];
-        }
-        if (secretkey(i) === parseInt[n2]) {
-            secretkey[i] = parseInt[n2];
-        }
-
-        if (secretkey(i) === parseInt[n3]) {
-            secretkey[i] = parseInt[n3];
-        }
-        if (secretkey(i) === parseInt[n4]) {
-            secretkey[i] = parseInt[n4];
-        }
-        if (secretkey(i) === parseInt[n5]) {
-            secretkey[i] = parseInt[n5];
-        }
-
-        if (secretkey(i) === parseInt[n6]) {
-            secretkey[i] = parseInt[n6];
-        }
-        if (secretkey(i) === parseInt[n7]) {
-            secretkey[i] = parseInt[n7];
-        }
-        if (secretkey(i) === parseInt[n8]) {
-            secretkey[i] = parseInt[n8];
-        }
-
-        if (secretkey(i) === parseInt[n9]) {
-            secretkey[i] = parseInt[n9];
-        }
-    };
-}
-//-- Ponemos en console.log el valor de j en la password
-
-//--fconst c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
-
-//--for (let j = 0; j < secretkey.length; j++) {
-
-    //--fif(secretkey[j] == 0) {      
-        //--fc1.innerHTML = ('pass 1' + secretkey[0]);
-    //--f}
-  
-//--f    if(secretkey[j] == 1) {      
-    //--f    c2.innerHTML = ('pass 2' + secretkey[1]);
-    //--f}  
-    
-    //--fif(secretkey[j] == 2) {      
-    //--f    c3.innerHTML = ('pass 3' + secretkey[2]);
-    //--f}  
-
-    //--fif(secretkey[j] == 1) {      
-    //--f    c4.innerHTML = ('pass 4' + secretkey[3]);
-    //--f}  
-//--f}
-//-- 
+gui.cod4 = digito4
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
@@ -201,4 +134,16 @@ gui.stop.onclick = () => {
 gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
+}
+
+
+//-- Funcion que compara el valor del onclick con el array de digitos
+function cambiarKey() {
+    for (let i=0; i < secretkey[i]; i++) {
+        if (secretkey[i] === gui.n0.onclick) {
+            secretkey[i] = digito1;
+            gui.cod1.innerHTML = (digito1);
+
+        };
+    }
 }
