@@ -57,20 +57,20 @@ for (let j = 0; j < secretkey.length; j++) {
 
 for (let j = 0; j < secretkey.length; j++) {
 
-    if(secretkey[j] == 1) {      
-        console.log.cod1.innerHTML = ('pass 1' + secretkey[j]);
+    if(secretkey[j] == 0) {      
+        console.log.cod1.innerHTML = ('pass 1' + j);
     }
   
-    if(secretkey[j] == 2) {      
-        console.log.cod2.innerHTML = ('pass 2' + secretkey[j]);
+    if(secretkey[j] == 1) {      
+        console.log.cod2.innerHTML = ('pass 2' + j);
     }  
     
-    if(secretkey[j] == 3) {      
-        console.log.cod3.innerHTML = ('pass 3' + secretkey[j]);
+    if(secretkey[j] == 2) {      
+        console.log.cod3.innerHTML = ('pass 3' + j);
     }
     
-    if(secretkey[j] == 4) {      
-        console.log.cod4.innerHTML = ('pass 4' + secretkey[j]);
+    if(secretkey[j] == 3) {      
+        console.log.cod4.innerHTML = ('pass 4' + j);
     }
 }
 //-- 
