@@ -54,24 +54,25 @@ for (let j = 0; j < secretkey.length; j++) {
 
 
 //-- Ponemos en console.log el valor de j en la password
-//-- 
+
+const c1 = cod1, c2 = cod2, c3= cod3, c4 = cod4;
 
 for (let j = 0; j < secretkey.length; j++) {
 
     if(secretkey[j] == 0) {      
-        cod1.innerHTML = ('pass 1' + j);
+        c1.innerHTML = ('pass 1' + j);
     }
   
     if(secretkey[j] == 1) {      
-        cod2.innerHTML = ('pass 2' + j);
+        c2.innerHTML = ('pass 2' + j);
     }  
     
     if(secretkey[j] == 2) {      
-        cod3.innerHTML = ('pass 3' + j);
+        c3.innerHTML = ('pass 3' + j);
     }  
 
     if(secretkey[j] == 1) {      
-        cod4.innerHTML = ('pass 4' + j);
+        c4.innerHTML = ('pass 4' + j);
     }  
 }
 //-- 
