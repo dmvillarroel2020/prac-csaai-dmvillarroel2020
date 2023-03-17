@@ -68,9 +68,7 @@ gui.cod4 = digito4
 //-- Creo un array con los digitos de la key 
 var digitos = [digito1, digito2, digito3, digito4];
 
-var botones = [gui.n0, gui.n1, gui.n2, gui.n3,
-               gui.n4, gui.n5, gui.n6, gui.n7,
-               gui.n8, gui.n9];
+var botones = [gui.n0, gui.n1, gui.n2, gui.n3, gui.n4, gui.n5, gui.n6, gui.n7, gui.n8, gui.n9];
 
 
 //-- Definir un objeto cronómetro
