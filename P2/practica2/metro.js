@@ -66,7 +66,7 @@ let cod2 = digito2;
 let cod3 = digito3;
 let cod4 = digito4
 
-cod1.innerHTML = (secretkey[0]);
+gui.cod1.innerHTML = secretkey[0];
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
