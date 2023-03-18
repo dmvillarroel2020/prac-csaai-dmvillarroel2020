@@ -66,11 +66,6 @@ let cod2 = digito2;
 let cod3 = digito3;
 let cod4 = digito4
 
-//-- Creo un array con los digitos de la key 
-let codigos = [cod1, cod2, cod3, cod4];
-
-
-let botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
 
 
 //-- Definir un objeto cronómetro
@@ -145,15 +140,47 @@ gui.reset.onclick = () => {
     crono.reset();
 }
 
+//-- Creo un array con la key
+let codigos = [cod1, cod2, cod3, cod4];
 
-
-//-- Funcion que compara el valor del onclick con el array de codigos
-for (var i = 0; i < botones.length; i++) {
-    var boton = botones[i]; // Obtén el botón 
-    boton.onclick = function() {
-      if (codigos.includes(this.boton)) { // Si el número del botón está en el array
-        this.boton.innerHTML = codigos[i]; // Cambia el texto del botón
-      }
-    };
-  }
-  
+//Condicion de si el onlick es igual que un valor del array se sustituya en el asterisco(array)
+if (codigos[i] === gui.n0.onclick()) {
+    codigos[i] = gui.n0.onclick(i);
+    codigos[i].innerHTML = (gui.n0);
+}; 
+if (codigos[i] === gui.n1.onclick()) {
+    codigos[i] = gui.n1.onclick(i);
+    codigos[i].innerHTML = (gui.n1);
+}; 
+if (codigos[i] === gui.n2.onclick()) {
+    codigos[i] = gui.n2.onclick(i);
+    codigos[i].innerHTML = (gui.n2);
+}; 
+if (codigos[i] === gui.n3.onclick()) {
+    codigos[i] = gui.n3.onclick(i);
+    codigos[i].innerHTML = (gui.n3);
+}; 
+if (codigos[i] === gui.n4.onclick()) {
+    codigos[i] = gui.n4.onclick(i);
+    codigos[i].innerHTML = (gui.n4);
+}; 
+if (codigos[i] === gui.n5.onclick()) {
+    codigos[i] = gui.n5.onclick(i);
+    codigos[i].innerHTML = (gui.n5);
+}; 
+if (codigos[i] === gui.n6.onclick()) {
+    codigos[i] = gui.n6.onclick(i);
+    codigos[i].innerHTML = (gui.n6);
+}; 
+if (codigos[i] === gui.n7.onclick()) {
+    codigos[i] = gui.n7.onclick(i);
+    codigos[i].innerHTML = (gui.n7);
+}; 
+if (codigos[i] === gui.n8.onclick()) {
+    codigos[i] = gui.n8.onclick(i);
+    codigos[i].innerHTML = (gui.n8);
+}; 
+if (codigos[i] === gui.n9.onclick()) {
+    codigos[i] = gui.n9.onclick(i);
+    codigos[i].innerHTML = (gui.n9);
+}; 
