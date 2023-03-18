@@ -147,44 +147,44 @@ let codigos = [cod1, cod2, cod3, cod4];
 for (let k = 0; k < codigos.length; k++) {
     
     //Condicion de si el onlick es igual que un valor del array se sustituya en el asterisco(array)
-    if (codigos[k] === gui.n0.onclick()) {
-        codigos[k] = gui.n0.onclick(k);
+    if (codigos[k] === gui.n0) {
+        codigos[k] = gui.n0;
         codigos[k].innerHTML = (gui.n0);
     }; 
-    if (codigos[k] === gui.n1.onclick()) {
-        codigos[k] = gui.n1.onclick(k);
+    if (codigos[k] === gui.n1) {
+        codigos[k] = gui.n1;
         codigos[k].innerHTML = (gui.n1);
     }; 
-    if (codigos[k] === gui.n2.onclick()) {
-        codigos[k] = gui.n2.onclick(k);
+    if (codigos[k] === gui.n2) {
+        codigos[k] = gui.n2;
         codigos[k].innerHTML = (gui.n2);
     }; 
-    if (codigos[k] === gui.n3.onclick()) {
-        codigos[k] = gui.n3.onclick(k);
+    if (codigos[k] === gui.n3) {
+        codigos[k] = gui.n3;
         codigos[k].innerHTML = (gui.n3);
     }; 
-    if (codigos[k] === gui.n4.onclick()) {
-        codigos[k] = gui.n4.onclick(k);
+    if (codigos[k] === gui.n4) {
+        codigos[k] = gui.n4;
         codigos[k].innerHTML = (gui.n4);
     }; 
-    if (codigos[k] === gui.n5.onclick()) {
-        codigos[k] = gui.n5.onclick(k);
+    if (codigos[k] === gui.n5) {
+        codigos[k] = gui.n5;
         codigos[k].innerHTML = (gui.n5);
     }; 
-    if (codigos[k] === gui.n6.onclick()) {
-        codigos[k] = gui.n6.onclick(k);
+    if (codigos[k] === gui.n6) {
+        codigos[k] = gui.n6;
         codigos[k].innerHTML = (gui.n6);
     }; 
-    if (codigos[k] === gui.n7.onclick()) {
-        codigos[k] = gui.n7.onclick(k);
+    if (codigos[k] === gui.n7) {
+        codigos[k] = gui.n7;
         codigos[k].innerHTML = (gui.n7);
     }; 
-    if (codigos[k] === gui.n8.onclick()) {
-        codigos[k] = gui.n8.onclick(k);
+    if (codigos[k] === gui.n8) {
+        codigos[k] = gui.n8;
         codigos[k].innerHTML = (gui.n8);
     }; 
-    if (codigos[k] === gui.n9.onclick()) {
-        codigos[k] = gui.n9.onclick(k);
+    if (codigos[k] === gui.n9) {
+        codigos[k] = gui.n9;
         codigos[k].innerHTML = (gui.n9);
     }; 
 }
