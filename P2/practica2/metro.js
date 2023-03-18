@@ -76,56 +76,134 @@ gui.start.onclick = () => {
 gui.n0.onclick = () => {
     console.log("Nº 0!!");
     crono.start();
-    
-    if (gui.n0.onclick = (0) === digito1) {
-        cod1.innerHTML = "0"
-    }
+    gui.n0=gui.n0.onclick()
 
+    if (gui.n0 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n0 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n0 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n0 == digito4)
+                cod1.innerHTML = 0;
+            
 }  
 
 gui.n1.onclick = () => {
     console.log("Nº 1!!");
     crono.start();
+    if (gui.n1 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n1 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n1 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n1 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n2.onclick = () => {
     console.log("Nº 2!!");
     crono.start();
+    if (gui.n2 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n2 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n2 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n2 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n3.onclick = () => {
     console.log("Nº 3!!");
     crono.start();
+    if (gui.n3 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n3 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n3 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n3 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n4.onclick = () => {
     console.log("Nº 4!!");
     crono.start();
+    if (gui.n4 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n4 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n4 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n4 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n5.onclick = () => {
     console.log("Nº 5!!");
     crono.start();
+    if (gui.n5 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n5 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n5 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n5 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n6.onclick = () => {
     console.log("Nº 6!!");
     crono.start();
+    if (gui.n6 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n6 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n6 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n6 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n7.onclick = () => {
     console.log("Nº 7!!");
     crono.start();
+    if (gui.n7 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n7 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n7 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n7 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n8.onclick = () => {
     console.log("Nº 8!!");
     crono.start();
+    if (gui.n8 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n8 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n8 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n8 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 gui.n9.onclick = () => {
     console.log("Nº 9!!");
     crono.start();
+    if (gui.n9 == digito1) {
+        cod1.innerHTML = 0;
+    } else if (gui.n9 == digito2) {
+            cod1.innerHTML = 0;
+            } else if (gui.n9 == digito3) {
+                cod1.innerHTML = 0;
+            } else (gui.n9 == digito4)
+                cod1.innerHTML = 0;
 }  
 
 //-- Detener el cronómetro
