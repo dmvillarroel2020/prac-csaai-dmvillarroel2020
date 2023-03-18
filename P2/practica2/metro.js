@@ -62,6 +62,9 @@ let digito4 = secretkey[3];
 
 
 gui.cod1.innerHTML = secretkey[0];
+gui.cod2.innerHTML = secretkey[1];
+gui.cod3.innerHTML = secretkey[2];
+gui.cod4.innerHTML = secretkey[3];
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
@@ -92,118 +95,54 @@ gui.n0.onclick = () => {
 gui.n1.onclick = () => {
     console.log("Nº 1!!");
     crono.start();
-    if (gui.n1 == digito1) {
-        cod1.innerHTML = 1;
-    } else if (gui.n1 == digito2) {
-            cod2.innerHTML = 1;
-            } else if (gui.n1 == digito3) {
-                cod3.innerHTML = 1;
-            } else (gui.n1 == digito4)
-                cod4.innerHTML = 1;
 }  
 
 gui.n2.onclick = () => {
     console.log("Nº 2!!");
     crono.start();
-    if (gui.n2 == digito1) {
-        cod1.innerHTML = 2;
-    } else if (gui.n2 == digito2) {
-            cod2.innerHTML = 2;
-            } else if (gui.n2 == digito3) {
-                cod3.innerHTML = 2;
-            } else (gui.n2 == digito4)
-                cod4.innerHTML = 2;
+
 }  
 
 gui.n3.onclick = () => {
     console.log("Nº 3!!");
     crono.start();
-    if (gui.n3 == digito1) {
-        cod1.innerHTML = 3;
-    } else if (gui.n3 == digito2) {
-            cod2.innerHTML = 3;
-            } else if (gui.n3 == digito3) {
-                cod3.innerHTML = 3;
-            } else (gui.n3 == digito4)
-                cod4.innerHTML = 3;
+
 }  
 
 gui.n4.onclick = () => {
     console.log("Nº 4!!");
     crono.start();
-    if (gui.n4 == digito1) {
-        cod1.innerHTML = 4;
-    } else if (gui.n4 == digito2) {
-            cod2.innerHTML = 4;
-            } else if (gui.n4 == digito3) {
-                cod3.innerHTML = 4;
-            } else (gui.n4 == digito4)
-                cod4.innerHTML = 4;
+
 }  
 
 gui.n5.onclick = () => {
     console.log("Nº 5!!");
     crono.start();
-    if (gui.n5 == digito1) {
-        cod1.innerHTML = 5;
-    } else if (gui.n5 == digito2) {
-            cod2.innerHTML = 5;
-            } else if (gui.n5 == digito3) {
-                cod3.innerHTML = 5;
-            } else (gui.n5 == digito4)
-                cod4.innerHTML = 5;
+
 }  
 
 gui.n6.onclick = () => {
     console.log("Nº 6!!");
     crono.start();
-    if (gui.n6 == digito1) {
-        cod1.innerHTML = 6;
-    } else if (gui.n6 == digito2) {
-            cod2.innerHTML = 6;
-            } else if (gui.n6 == digito3) {
-                cod3.innerHTML = 6;
-            } else (gui.n6 == digito4)
-                cod4.innerHTML = 6;
+
 }  
 
 gui.n7.onclick = () => {
     console.log("Nº 7!!");
     crono.start();
-    if (gui.n7 == digito1) {
-        cod1.innerHTML = 7;
-    } else if (gui.n7 == digito2) {
-            cod2.innerHTML = 7;
-            } else if (gui.n7 == digito3) {
-                cod3.innerHTML = 7;
-            } else (gui.n7 == digito4)
-                cod4.innerHTML = 7;
+
 }  
 
 gui.n8.onclick = () => {
     console.log("Nº 8!!");
     crono.start();
-    if (gui.n8 == digito1) {
-        cod1.innerHTML = 8;
-    } else if (gui.n8 == digito2) {
-            cod2.innerHTML = 8;
-            } else if (gui.n8 == digito3) {
-                cod3.innerHTML = 8;
-            } else (gui.n8 == digito4)
-                cod4.innerHTML = 8;
+
 }  
 
 gui.n9.onclick = () => {
     console.log("Nº 9!!");
     crono.start();
-    if (gui.n9 == digito1) {
-        cod1.innerHTML = 9;
-    } else if (gui.n9 == digito2) {
-            cod2.innerHTML = 9;
-            } else if (gui.n9 == digito3) {
-                cod3.innerHTML = 9;
-            } else (gui.n9 == digito4)
-                cod4.innerHTML = 9;
+
 }  
 
 //-- Detener el cronómetro
@@ -217,3 +156,4 @@ gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
 }
+
