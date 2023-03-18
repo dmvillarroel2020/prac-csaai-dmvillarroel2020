@@ -144,48 +144,48 @@ gui.reset.onclick = () => {
 let codigos = [cod1, cod2, cod3, cod4];
 
 //-- Mostramos el contenido del array de números secretos en la consola
-for (let i = 0; i < codigos.length; i++) {
+for (let k = 0; k < codigos.length; k++) {
     
     //Condicion de si el onlick es igual que un valor del array se sustituya en el asterisco(array)
-    if (codigos[i] === gui.n0.onclick()) {
-        codigos[i] = gui.n0.onclick(i);
-        codigos[i].innerHTML = (gui.n0);
+    if (codigos[k] === gui.n0.onclick()) {
+        codigos[k] = gui.n0.onclick(k);
+        codigos[k].innerHTML = (gui.n0);
     }; 
-    if (codigos[i] === gui.n1.onclick()) {
-        codigos[i] = gui.n1.onclick(i);
-        codigos[i].innerHTML = (gui.n1);
+    if (codigos[k] === gui.n1.onclick()) {
+        codigos[k] = gui.n1.onclick(k);
+        codigos[k].innerHTML = (gui.n1);
     }; 
-    if (codigos[i] === gui.n2.onclick()) {
-        codigos[i] = gui.n2.onclick(i);
-        codigos[i].innerHTML = (gui.n2);
+    if (codigos[k] === gui.n2.onclick()) {
+        codigos[k] = gui.n2.onclick(k);
+        codigos[k].innerHTML = (gui.n2);
     }; 
-    if (codigos[i] === gui.n3.onclick()) {
-        codigos[i] = gui.n3.onclick(i);
-        codigos[i].innerHTML = (gui.n3);
+    if (codigos[k] === gui.n3.onclick()) {
+        codigos[k] = gui.n3.onclick(k);
+        codigos[k].innerHTML = (gui.n3);
     }; 
-    if (codigos[i] === gui.n4.onclick()) {
-        codigos[i] = gui.n4.onclick(i);
-        codigos[i].innerHTML = (gui.n4);
+    if (codigos[k] === gui.n4.onclick()) {
+        codigos[k] = gui.n4.onclick(k);
+        codigos[k].innerHTML = (gui.n4);
     }; 
-    if (codigos[i] === gui.n5.onclick()) {
-        codigos[i] = gui.n5.onclick(i);
-        codigos[i].innerHTML = (gui.n5);
+    if (codigos[k] === gui.n5.onclick()) {
+        codigos[k] = gui.n5.onclick(k);
+        codigos[k].innerHTML = (gui.n5);
     }; 
-    if (codigos[i] === gui.n6.onclick()) {
-        codigos[i] = gui.n6.onclick(i);
-        codigos[i].innerHTML = (gui.n6);
+    if (codigos[k] === gui.n6.onclick()) {
+        codigos[k] = gui.n6.onclick(k);
+        codigos[k].innerHTML = (gui.n6);
     }; 
-    if (codigos[i] === gui.n7.onclick()) {
-        codigos[i] = gui.n7.onclick(i);
-        codigos[i].innerHTML = (gui.n7);
+    if (codigos[k] === gui.n7.onclick()) {
+        codigos[k] = gui.n7.onclick(k);
+        codigos[k].innerHTML = (gui.n7);
     }; 
-    if (codigos[i] === gui.n8.onclick()) {
-        codigos[i] = gui.n8.onclick(i);
-        codigos[i].innerHTML = (gui.n8);
+    if (codigos[k] === gui.n8.onclick()) {
+        codigos[k] = gui.n8.onclick(k);
+        codigos[k].innerHTML = (gui.n8);
     }; 
-    if (codigos[i] === gui.n9.onclick()) {
-        codigos[i] = gui.n9.onclick(i);
-        codigos[i].innerHTML = (gui.n9);
+    if (codigos[k] === gui.n9.onclick()) {
+        codigos[k] = gui.n9.onclick(k);
+        codigos[k].innerHTML = (gui.n9);
     }; 
 }
 
