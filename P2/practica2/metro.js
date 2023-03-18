@@ -54,7 +54,7 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( 'Posición nº' + j + ' Dígito Codificado ' + secretkey[j]);
 }
 
-//-- Guardo el array por separado en variables
+//-- Guardo el array generado por separado en variables
 let digito1 = secretkey[0];
 let digito2 = secretkey[1];
 let digito3 = secretkey[2];
@@ -66,7 +66,7 @@ let cod2 = digito2;
 let cod3 = digito3;
 let cod4 = digito4
 
-
+cod1.innerHTML = (secretkey[0]);
 
 //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
@@ -148,43 +148,33 @@ for (let k = 0; k < codigos.length; k++) {
     
     //Condicion de si el onlick es igual que un valor del array se sustituya en el asterisco(array)
     if (codigos[k] === gui.n0) {
-        codigos[k] = gui.n0;
         codigos[k].innerHTML = (gui.n0);
     }; 
     if (codigos[k] === gui.n1) {
-        codigos[k] = gui.n1;
         codigos[k].innerHTML = (gui.n1);
     }; 
     if (codigos[k] === gui.n2) {
-        codigos[k] = gui.n2;
         codigos[k].innerHTML = (gui.n2);
     }; 
     if (codigos[k] === gui.n3) {
-        codigos[k] = gui.n3;
         codigos[k].innerHTML = (gui.n3);
     }; 
     if (codigos[k] === gui.n4) {
-        codigos[k] = gui.n4;
         codigos[k].innerHTML = (gui.n4);
     }; 
     if (codigos[k] === gui.n5) {
-        codigos[k] = gui.n5;
         codigos[k].innerHTML = (gui.n5);
     }; 
     if (codigos[k] === gui.n6) {
-        codigos[k] = gui.n6;
         codigos[k].innerHTML = (gui.n6);
     }; 
     if (codigos[k] === gui.n7) {
-        codigos[k] = gui.n7;
         codigos[k].innerHTML = (gui.n7);
     }; 
     if (codigos[k] === gui.n8) {
-        codigos[k] = gui.n8;
         codigos[k].innerHTML = (gui.n8);
     }; 
     if (codigos[k] === gui.n9) {
-        codigos[k] = gui.n9;
         codigos[k].innerHTML = (gui.n9);
     }; 
 }
