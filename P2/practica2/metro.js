@@ -60,11 +60,6 @@ let digito2 = secretkey[1];
 let digito3 = secretkey[2];
 let digito4 = secretkey[3];
 
-//-- Asigno esas variables a los asteriscos
-let cod1 = digito1;
-let cod2 = digito2;
-let cod3 = digito3;
-let cod4 = digito4
 
 gui.cod1.innerHTML = secretkey[0];
 
@@ -81,6 +76,11 @@ gui.start.onclick = () => {
 gui.n0.onclick = () => {
     console.log("Nº 0!!");
     crono.start();
+    
+    if (gui.n0.onclick = (0) === digito1) {
+        cod1.innerHTML = "0"
+    }
+
 }  
 
 gui.n1.onclick = () => {
@@ -139,43 +139,3 @@ gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
 }
-
-//-- Creo un array con la key
-let codigos = [cod1, cod2, cod3, cod4];
-
-//-- Mostramos el contenido del array de números secretos en la consola
-for (let k = 0; k < codigos.length; k++) {
-    
-    //Condicion de si el onlick es igual que un valor del array se sustituya en el asterisco(array)
-    if (codigos[k] === gui.n0) {
-        codigos[k].innerHTML = (gui.n0);
-    }; 
-    if (codigos[k] === gui.n1) {
-        codigos[k].innerHTML = (gui.n1);
-    }; 
-    if (codigos[k] === gui.n2) {
-        codigos[k].innerHTML = (gui.n2);
-    }; 
-    if (codigos[k] === gui.n3) {
-        codigos[k].innerHTML = (gui.n3);
-    }; 
-    if (codigos[k] === gui.n4) {
-        codigos[k].innerHTML = (gui.n4);
-    }; 
-    if (codigos[k] === gui.n5) {
-        codigos[k].innerHTML = (gui.n5);
-    }; 
-    if (codigos[k] === gui.n6) {
-        codigos[k].innerHTML = (gui.n6);
-    }; 
-    if (codigos[k] === gui.n7) {
-        codigos[k].innerHTML = (gui.n7);
-    }; 
-    if (codigos[k] === gui.n8) {
-        codigos[k].innerHTML = (gui.n8);
-    }; 
-    if (codigos[k] === gui.n9) {
-        codigos[k].innerHTML = (gui.n9);
-    }; 
-}
-
