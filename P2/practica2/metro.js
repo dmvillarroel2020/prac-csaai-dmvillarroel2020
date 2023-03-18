@@ -59,17 +59,18 @@ let digito1 = secretkey[0];
 let digito2 = secretkey[1];
 let digito3 = secretkey[2];
 let digito4 = secretkey[3];
+
 //-- Asigno esas variables a los asteriscos
-cod1 = digito1;
-cod2 = digito2;
-cod3 = digito3;
-cod4 = digito4
+let cod1 = digito1;
+let cod2 = digito2;
+let cod3 = digito3;
+let cod4 = digito4
 
 //-- Creo un array con los digitos de la key 
-var digitos = [digito1, digito2, digito3, digito4];
+let codigos = [cod1, cod2, cod3, cod4];
 
 
-var botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
+let botones = [n0, n1, n2, n3, n4, n5, n6, n7, n8, n9];
 
 
 //-- Definir un objeto cronómetro
@@ -145,12 +146,13 @@ gui.reset.onclick = () => {
 }
 
 
-//-- Funcion que compara el valor del onclick con el array de digitos
+
+//-- Funcion que compara el valor del onclick con el array de codigos
 for (var i = 0; i < botones.length; i++) {
     var boton = botones[i]; // Obtén el botón 
     boton.onclick = function() {
-      if (digitos.includes(this.boton)) { // Si el número del botón está en el array
-        this.innerHTML = 'hola'; // Cambia el texto del botón
+      if (codigos.includes(this.boton)) { // Si el número del botón está en el array
+        this.boton.innerHTML = codigos[i]; // Cambia el texto del botón
       }
     };
   }
