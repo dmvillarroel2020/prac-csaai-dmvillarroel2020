@@ -13,14 +13,11 @@ const gui = {
     cod3 : document.getElementById("codif3"),
     cod4 : document.getElementById("codif4"),
 
+    cods : document.getElementsByClassName("cod"),
     numero : document.getElementsByClassName("num"),
-
 }
 
 console.log("Ejecutando JS...");
-//-- SECRET KEY Y MOSTRAR POR CONSOLE.LOG
-
-
 //-- Array que almacena números secretos
 const secretkey = [];
 
@@ -66,6 +63,8 @@ const arrayteclado = [];
 //---- Configurar las funciones de retrollamada
 
 //-- Arranque del cronometro al pulsar un boton numerico
+const pass = ["*","*","*","*"];
+
 for (let k = 0; k < 10; k++) {
     gui.numero[k].onclick = () => {
     crono.start();
@@ -76,29 +75,6 @@ for (let k = 0; k < 10; k++) {
     }
 }
 
-//-- If y for si un valor del array del arrayteclado está en 
-//-- el array de secretkey entonces hace innerHTML y cambia el color
-var found = false;
-
-for (var l = 0; l < arrayteclado.length; l++) {
-    if (secretkey.indexOf(arrayteclado[l]) > -1) {
-
-        found = true;
-        
-        gui.cod1.innerHTML = secretkey[l];
-        gui.cod1.style.backgroundColor = "green";
-
-        gui.cod2.innerHTML = secretkey[l];
-        gui.cod2.style.backgroundColor = "green";
-
-        gui.cod3.innerHTML = secretkey[l];
-        gui.cod3.style.backgroundColor = "green";
-
-        gui.cod4.innerHTML = secretkey[l];
-        gui.cod4.style.backgroundColor = "green";
-        break;
-    }
-}
 
 //-- Arranque del cronometro
 gui.start.onclick = () => {
