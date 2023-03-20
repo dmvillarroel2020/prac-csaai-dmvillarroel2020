@@ -13,6 +13,8 @@ const gui = {
     cod3 : document.getElementById("codif3"),
     cod4 : document.getElementById("codif4"),
 
+    numero : document.getElementsByClassName("num"),
+
 }
 
 
@@ -58,21 +60,20 @@ gui.cod4.style.backgroundColor = "green";
     //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
 
-nums = [];
 
-numero = document.getElementsByClassName("num");
-nums = [numero.onclick()];
-console.log(nums);
 
-console.log(numero);
+
+
 //---- Configurar las funciones de retrollamada
 
 
 //-- Arranque del cronometro al pulsar un boton numerico
-
-numero.onclick = () => {
-    crono.start();    
+for (let k =0; k < 10; k++) {
+    gui.numero[k].onclick = () => {
+    crono.start();
 }
+}
+
 
 //-- Arranque del cronometro
 gui.start.onclick = () => {
