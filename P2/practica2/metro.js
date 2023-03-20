@@ -40,12 +40,24 @@ for (let j = 0; j < secretkey.length; j++) {
     console.log( 'Posición nº' + j + ' Dígito Codificado ' + secretkey[j]);
 }
 
+gui.cod1.innerHTML = secretkey[0];
+gui.cod1.style.backgroundColor = "green";
+
+gui.cod2.innerHTML = secretkey[1];
+gui.cod2.style.backgroundColor = "green";
+
+gui.cod3.innerHTML = secretkey[2];
+gui.cod3.style.backgroundColor = "green";
+
+gui.cod4.innerHTML = secretkey[3];
+gui.cod4.style.backgroundColor = "green";
 
 
 //-- CRONOMETRO
 
     //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
+
 numero = document.getElementsByClassName("num");
 
 console.log(numero);
@@ -75,20 +87,3 @@ gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
 }
-
-
-
-gui.cod1.innerHTML = secretkey[0];
-gui.cod1.style.backgroundColor = "green";
-
-gui.cod2.innerHTML = secretkey[1];
-gui.cod2.style.backgroundColor = "green";
-
-gui.cod3.innerHTML = secretkey[2];
-gui.cod3.style.backgroundColor = "green";
-
-gui.cod4.innerHTML = secretkey[3];
-gui.cod4.style.backgroundColor = "green";
-
-
-
