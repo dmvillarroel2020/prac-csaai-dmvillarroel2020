@@ -70,7 +70,7 @@ for (let k = 0; k < 10; k++) {
     crono.start();
     
     //-- Guarda el click en numarray
-    let numarray = gui.numero[k].onclick();
+    let numarray = gui.numero[k];
     arrayteclado.push(numarray.toString());
     }
 }
