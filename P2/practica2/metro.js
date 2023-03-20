@@ -13,14 +13,13 @@ const gui = {
     cod3 : document.getElementById("codif3"),
     cod4 : document.getElementById("codif4"),
 
-    numero : document.getElementsByClassName("num")
 }
 
 
 
 console.log("Ejecutando JS...");
 //-- SECRET KEY Y MOSTRAR POR CONSOLE.LOG
-{
+
 
 //-- Array que almacena números secretos
 const secretkey = [];
@@ -40,24 +39,23 @@ for (let i = 0; i < 4; i++) {
 for (let j = 0; j < secretkey.length; j++) {
     console.log( 'Posición nº' + j + ' Dígito Codificado ' + secretkey[j]);
 }
-}
+
 
 
 //-- CRONOMETRO
-{
+
     //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
+numero = document.getElementsByClassName("num");
 
+console.log(numero);
 //---- Configurar las funciones de retrollamada
 
 
 //-- Arranque del cronometro al pulsar un boton numerico
 
-gui.numero.onclick = () => {
-    for (n of numero) {
-            console.log("Boton Pulsado: " + n)
-    crono.start();
-    }         
+numero.onclick = () => {
+    crono.start();    
 }
 
 //-- Arranque del cronometro
@@ -77,7 +75,7 @@ gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
 }
-}
+
 
 
 gui.cod1.innerHTML = secretkey[0];
