@@ -13,16 +13,12 @@ const gui = {
     cod3 : document.getElementById("codif3"),
     cod4 : document.getElementById("codif4"),
 
+    numero : document.getElementsByClassName("num")
 }
 
-const botones = document.getElementsByClassName("num");
 
-for (let boton of botones){
-    console.log("Boton " + boton.value)
-}
 
 console.log("Ejecutando JS...");
-
 //-- SECRET KEY Y MOSTRAR POR CONSOLE.LOG
 {
 
@@ -47,13 +43,22 @@ for (let j = 0; j < secretkey.length; j++) {
 }
 
 
-
 //-- CRONOMETRO
 {
     //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
 
 //---- Configurar las funciones de retrollamada
+
+
+//-- Arranque del cronometro al pulsar un boton numerico
+
+gui.numero.onclick = () => {
+    for (n of numero) {
+            console.log("Boton Pulsado: " + n)
+    crono.start();
+    }         
+}
 
 //-- Arranque del cronometro
 gui.start.onclick = () => {
@@ -75,20 +80,17 @@ gui.reset.onclick = () => {
 }
 
 
-//-- BOTON 0
+gui.cod1.innerHTML = secretkey[0];
+gui.cod1.style.backgroundColor = "green";
 
+gui.cod2.innerHTML = secretkey[1];
+gui.cod2.style.backgroundColor = "green";
 
+gui.cod3.innerHTML = secretkey[2];
+gui.cod3.style.backgroundColor = "green";
 
-//gui.cod1.innerHTML = secretkey[0];
-//gui.cod1.style.backgroundColor = "green";
+gui.cod4.innerHTML = secretkey[3];
+gui.cod4.style.backgroundColor = "green";
 
-//gui.cod2.innerHTML = secretkey[1];
-//gui.cod2.style.backgroundColor = "green";
-
-//gui.cod3.innerHTML = secretkey[2];
-//gui.cod3.style.backgroundColor = "green";
-
-//gui.cod4.innerHTML = secretkey[3];
-//gui.cod4.style.backgroundColor = "green";
 
 
