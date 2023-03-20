@@ -58,7 +58,11 @@ gui.cod4.style.backgroundColor = "green";
     //-- Definir un objeto cronómetro
 const crono = new Crono(gui.display);
 
+nums = [];
+
 numero = document.getElementsByClassName("num");
+nums = [numero.onclick()];
+console.log(nums);
 
 console.log(numero);
 //---- Configurar las funciones de retrollamada
