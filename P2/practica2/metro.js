@@ -68,6 +68,7 @@ const pass = ["*","*","*","*"];
 for (let k = 0; k < 10; k++) {
     gui.numero[k].onclick = () => {
     crono.start();
+    console.log("Boton" + k + "pulsado");
     
     //-- Guarda el click en numarray
     let numarray = gui.numero[k];
