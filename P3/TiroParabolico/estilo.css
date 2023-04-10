@@ -1,0 +1,58 @@
+body {
+    background-color: antiquewhite;
+}
+
+#canvas-container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin:  2px;
+    border-width: 5px;
+    background-color:rgb(196, 111, 189);
+
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color:rgb(151, 28, 141);
+
+
+  }
+  #time {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+  #result {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #controls-container {
+    margin-top: 20px;
+    background-color:rgb(0, 197, 26);
+
+  }
+  .control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .control label {
+    margin-right: 10px;
+  }
+  
+  #container {
+    border: 1px solid black;
+    position: relative;
+    width: 80px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  h2 {
+    background-color: rgb(9, 59, 59);
+    color: white;
+  }

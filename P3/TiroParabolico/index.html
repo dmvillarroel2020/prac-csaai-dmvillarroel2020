@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tiro Parabolico</title>
+    <script src="tiroparab.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <h2>Hola! Debes ayudar a la pelota de ping pong a llegar al punto, una especie agujero negro. Puedes cambiar el ángulo y la velodidad a tu gusto.</h2>
+
+    <div id="canvas-container">
+
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="controls-container">
+      <div class="control">
+        <label for="angle-slider">Ángulo de salida:</label>
+        <input type="range" min="0" max="90" value="45" id="angle-slider">
+        <p id="angleDisplay"></p>
+
+      </div>
+
+      <div class="control">
+        <label for="velocity-slider">Velocidad de disparo:</label>
+        <input type="range" min="0" max="25" value="2" id="velocity-slider">
+        <p id="speedDisplay"></p>
+
+      </div>
+      
+      <div id="time"></div>
+
+      <button id="shoot-button">Lanzar</button>
+      <button id="reset-button">Reiniciar</button>
+      <div id="result"></div>
+
+    </div>
+
+  </body>
+</html>

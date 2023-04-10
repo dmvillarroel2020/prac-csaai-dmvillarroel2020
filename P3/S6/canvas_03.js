@@ -8,7 +8,7 @@ ctx.beginPath();
     ctx.rect(5,5, 100, 50);
 
     //-- Dibujar
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'blue';
 
     //-- Cambiar el tamaño de la línea del trazo
     ctx.lineWidth = 4;
