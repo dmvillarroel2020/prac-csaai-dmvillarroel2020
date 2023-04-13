@@ -18,8 +18,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:#5cd1da;
-
+    border-radius: 5px;
 }
 
 .controls {
@@ -66,9 +65,9 @@ button {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
-    background: #5cd1da;
+    border-color: whitesmoke;
+    border-width: 3px;
 
-    
 }
 
 .grid-container.flipped .tablero {
@@ -92,7 +91,7 @@ button {
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    background: #282A3A;
+    background: #202446;
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
@@ -101,7 +100,7 @@ button {
     font-size: 28pt;
     text-align: center;
     line-height: 100px;
-    background: #5cd1da;
+    background: #5c64da;
     transform: rotateY(180deg) rotateZ(50deg);
     user-select: none;
 }
@@ -121,7 +120,7 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #ffc800;
+    background: #5c64da;
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
@@ -131,7 +130,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 21pt;
-    color: #ffffff;
+    color: #5c64da;
 }
 
 .highlight {
