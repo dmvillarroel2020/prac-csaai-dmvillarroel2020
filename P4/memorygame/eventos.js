@@ -6,7 +6,7 @@ const selectors = {
     movimientos: document.querySelector('.movimientos'),
     timer: document.querySelector('.timer'),
     comenzar: document.querySelector('button'),
-    win: document.querySelector('.win')
+    win: document.querySelector('.win'),
 }
 
 const state = {
@@ -14,13 +14,21 @@ const state = {
     flippedCards: 0,
     totalFlips: 0,
     totalTime: 0,
-    loop: null
+    loop: null,
+    gameReset: false
 }
+
+
 
 //Tablero//
 
 const generateGame = () => {
-    const dimensions = selectors.tablero.getAttribute('grid-dimension')
+
+
+
+
+    const dimensions = selectors.tablero.getAttribute('grid-dimension')    
+
 
     //-- Nos aseguramos de que el número de dimensiones es par
     // y si es impar lanzamos un error
@@ -28,14 +36,16 @@ const generateGame = () => {
         throw new Error("Las dimensiones del tablero deben ser un número par.")
     }
 
+
+
     //-- Creamos un array con los emojis que vamos a utilizar en nuestro juego
-    const emojis = ['🥔', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍']
+    const player = ["benze.jpg", "marado.jpg", "pogba.jpg", "mane.jpg", "sane.jpg", "ancelotti.jpg", "cru.jpg", "mou.jpg", "son.jpeg","cr7.jpg", "dinho.jpg", "halaand.jpg", "lewan.jpg", "mbappe.jpg", "messi.jpg", "ney.jpg", "salah.jpg", "vini.jpg"]
     
     //-- Elegimos un subconjunto de emojis al azar, así cada vez que comienza el juego
     // es diferente.
     // Es decir, si tenemos un array con 10 emojis, vamos a elegir el cuadrado de las
     // dimensiones entre dos, para asegurarnos de que cubrimos todas las cartas
-    const picks = pickRandom(emojis, (dimensions * dimensions) / 2) 
+    const picks = pickRandom(player, (dimensions * dimensions) / 2) 
 
     //-- Después descolocamos las posiciones para asegurarnos de que las parejas de cartas
     // están desordenadas.
@@ -45,10 +55,10 @@ const generateGame = () => {
     //  todas las cartas en función de las dimensiones
     const cards = `
         <div class="tablero" style="grid-template-columns: repeat(${dimensions}, auto)">
-            ${items.map(item => `
+            ${items.map(items => `
                 <div class="card">
                     <div class="card-front"></div>
-                    <div class="card-back">${item}</div>
+                    <div class="card-back"><img src= ${items}></div>
                 </div>
             `).join('')}
        </div>
@@ -108,8 +118,6 @@ const shuffle = array => {
 
 //      EVENTOS     //
 
-// Flip Card y Comenzar Juego //
-
 const attachEventListeners = () => {
     document.addEventListener('click', event => {
         // Del evento disparado vamos a obtener alguna información útil
@@ -128,12 +136,6 @@ const attachEventListeners = () => {
     })
 }
 
-// Generamos el juego
-generateGame()
-
-// Asignamos las funciones de callback para determinados eventos
-attachEventListeners()
-
 // Empezamos el juego //
 
 const startGame = () => {
@@ -149,9 +151,11 @@ const startGame = () => {
         state.totalTime++
 
         selectors.movimientos.innerText = `${state.totalFlips} movimientos`
-        selectors.timer.innerText = `tiempo: ${state.totalTime} sec`
+        selectors.timer.innerText = `Tiempo: ${state.totalTime} sec`
     }, 1000)
+
 }
+
 
 const flipCard = card => {
     // Sumamos uno al contador de cartas giradas
@@ -178,7 +182,7 @@ const flipCard = card => {
 
         // Si las cartas coinciden las marcamos como pareja 
         // añadiendo la clase correspondiente
-        if (flippedCards[0].innerText === flippedCards[1].innerText) {
+        if (flippedCards[0].innerHTML === flippedCards[1].innerHTML) {
             flippedCards[0].classList.add('matched')
             flippedCards[1].classList.add('matched')
         }
@@ -189,7 +193,7 @@ const flipCard = card => {
         // y para eso llamamos a la función flipBackCards()
         setTimeout(() => {
             flipBackCards()
-        }, 1000)
+        }, 500)
     }
 
     // Antes de terminar, comprobamos si quedan cartas por girar
@@ -201,18 +205,17 @@ const flipCard = card => {
             selectors.gridContainer.classList.add('flipped')
             // Le mostramos las estadísticas del juego
             selectors.win.innerHTML = `
-                <span class="win-text">
-                    ¡Has ganado!<br />
-                    con <span class="highlight">${state.totalFlips}</span> movimientos<br />
-                    en un tiempo de <span class="highlight">${state.totalTime}</span> segundos
-                </span>
-            `
-            // Paramos el loop porque el juego ha terminado
-            clearInterval(state.loop)
-        }, 1000)
+            <span class="win-text">
+                HAS GANADO<br />
+                Con <span class="highlight">${state.totalFlips}</span> movimientos<br />
+                En un tiempo de <span class="highlight">${state.totalTime}</span> segundos
+            </span>
+        `
+        // Paramos el loop porque el juego ha terminado
+        clearInterval(state.loop)
+    }, 1000)
     }
 }
-
 
 // Fallo de emparejamiento //
 
@@ -225,3 +228,12 @@ const flipBackCards = () => {
     // Ponemos el contado de parejas de cartas a cero
     state.flippedCards = 0
 }
+
+
+
+// Generamos el juego
+generateGame()
+
+// Asignamos las funciones de callback para determinados eventos
+attachEventListeners()
+
