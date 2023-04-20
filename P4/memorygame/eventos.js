@@ -1,3 +1,5 @@
+//Declaramos las constantes//
+
 const selectors = {
     gridContainer: document.querySelector('.grid-container'),
     tablero: document.querySelector('.tablero'),
@@ -15,7 +17,7 @@ const state = {
     loop: null
 }
 
-//////////////////////////
+//Tablero//
 
 const generateGame = () => {
     const dimensions = selectors.tablero.getAttribute('grid-dimension')
@@ -61,9 +63,7 @@ const generateGame = () => {
     selectors.tablero.replaceWith(parser.querySelector('.tablero'))
 }
 
-
-///////////////////////
-
+//Elección al azar//
 
 const pickRandom = (array, items) => {
     // La sintaxis de tres puntos nos sirve para hacer una copia del array
@@ -86,7 +86,7 @@ const pickRandom = (array, items) => {
     return randomPicks
 }
 
-/////////////////////////////
+//Array descolocado//
 
 const shuffle = array => {
     const clonedArray = [...array]
@@ -106,7 +106,9 @@ const shuffle = array => {
     return clonedArray
 }
 
-////////////eventos///////////
+//      EVENTOS     //
+
+// Flip Card y Comenzar Juego //
 
 const attachEventListeners = () => {
     document.addEventListener('click', event => {
@@ -132,8 +134,7 @@ generateGame()
 // Asignamos las funciones de callback para determinados eventos
 attachEventListeners()
 
-
-/////////////start game//////////////////
+// Empezamos el juego //
 
 const startGame = () => {
     // Iniciamos el estado de juego
@@ -151,10 +152,6 @@ const startGame = () => {
         selectors.timer.innerText = `tiempo: ${state.totalTime} sec`
     }, 1000)
 }
-
-
-///////estado final////////
-
 
 const flipCard = card => {
     // Sumamos uno al contador de cartas giradas
@@ -195,7 +192,7 @@ const flipCard = card => {
         }, 1000)
     }
 
-// Antes de terminar, comprobamos si quedan cartas por girar
+    // Antes de terminar, comprobamos si quedan cartas por girar
     // porque cuando no quedan cartas por girar hemos ganado
     // y se lo tenemos que mostrar al jugador
     if (!document.querySelectorAll('.card:not(.flipped)').length) {
@@ -216,6 +213,9 @@ const flipCard = card => {
     }
 }
 
+
+// Fallo de emparejamiento //
+
 const flipBackCards = () => {
     // Seleccionamos las cartas que no han sido emparejadas
     // y quitamos la clase de giro
@@ -225,8 +225,3 @@ const flipBackCards = () => {
     // Ponemos el contado de parejas de cartas a cero
     state.flippedCards = 0
 }
-
-
-
-
-///
