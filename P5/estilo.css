@@ -2,7 +2,10 @@ body {
     background-color: lightblue;
   }
 
-  img{
-    width: 200px;
+img{
+    width: 350px;
   }
 
+canvas{
+    width: 350px;
+}

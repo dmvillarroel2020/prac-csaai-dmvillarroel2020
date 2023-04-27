@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+  }
+
+input {
+    background-color: lightgoldenrodyellow;
+    border-radius: 8px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+#botones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
