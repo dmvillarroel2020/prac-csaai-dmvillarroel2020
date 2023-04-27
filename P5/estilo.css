@@ -1,11 +1,11 @@
 body {
-    background-color: lightblue;
-  }
+  background-color: lightgrey;
+}
 
-img{
-    width: 350px;
-  }
+#cloud {
+display: none;
+}
 
-canvas{
-    width: 350px;
+#imagesrchide {
+display: none;
 }
